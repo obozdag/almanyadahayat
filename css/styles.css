@@ -1,0 +1,54 @@
+/* colours */
+:root{
+  --primary: #FFE9D2;
+  --secondary: #FFE1C4;
+  --title: #FF8816;
+  --fa: orange;
+}
+
+body {
+	background-color: #f7f7f7;
+	padding-bottom: 4rem;
+}
+.middle {
+	min-height: 100vh;
+}
+a {
+	color: #17a2b8;
+}
+.fa {
+	color: var(--fa);
+}
+.media .fa {
+	width: 4rem;
+}
+.border-orange {
+	border-color: orange !important;
+}
+.navbar-top {
+	margin-bottom: 1rem;
+}
+.navbar .nav-link {
+	white-space: nowrap;
+}
+.btn-link {
+	color: #17a2b8;
+}
+h1 {
+	font-size: 1.8rem;
+	color: orange;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid orange;
+}
+h2 {
+	font-size: 1.2rem;
+	color: #17a2b8;
+}
+h3 {
+	font-size: 1rem;
+	color: orange;
+}
+footer {
+	/*position: fixed;*/
+}
