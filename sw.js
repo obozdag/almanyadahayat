@@ -37,11 +37,7 @@ self.addEventListener('install', evt => {
 	evt.waitUntil(
 		caches.open(cacheName).then(cache => {
 			console.log(cache);
-			cache.addAll(staticContentToCache)
-				.then(function(result) {
-					console.log('[Service Worker] Added static content to cache');
-				})
-				.catch(err => console.log(err));
+			staticContentToCache.forEach(function(file){cache.add(file).then(()=>console.log(file, ' added')).catch(err=>console.err(err))});
 		})
 	);
 });
