@@ -5,7 +5,7 @@ var staticContentToCache = [
 	'/js/bootstrap.min.js',
 	'/css/bootstrap.min.css',
 	'/css/fontawesome.all.css',
-	'/css/webfonts/fa-solid-900.woff2',
+	'/css/webfonts/fa-solid-900.ttf',
 	'/app.js',
 	'/css/styles.css',
 	'/favicon.ico',
