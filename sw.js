@@ -43,11 +43,10 @@ self.addEventListener('install', evt => {
 			cache.addAll(staticContentToCache)
 				.then(function(result) {
 					console.log('[Service Worker] Added static content to cache');
-
-					cache.addAll(dynamicContentToCache)
-						.then(result => console.log('[Service Worker] Added dynamic content to cache'))
-						.catch(err => console.log(err));
 				})
+				.catch(err => console.log(err));
+			cache.addAll(dynamicContentToCache)
+				.then(result => console.log('[Service Worker] Added dynamic content to cache'))
 				.catch(err => console.log(err));
 		})
 	);
