@@ -17,9 +17,6 @@ var staticContentToCache = [
 	'/media/icons/icon-192x192.png',
 	'/media/icons/icon-384x384.png',
 	'/media/icons/icon-512x512.png',
-];
-
-var dynamicContentToCache = [
 	'/index.html',
 	'/egitim.html',
 	'/gezi_rehberi.html',
@@ -44,9 +41,6 @@ self.addEventListener('install', evt => {
 				.then(function(result) {
 					console.log('[Service Worker] Added static content to cache');
 				})
-				.catch(err => console.log(err));
-			cache.addAll(dynamicContentToCache)
-				.then(result => console.log('[Service Worker] Added dynamic content to cache'))
 				.catch(err => console.log(err));
 		})
 	);
