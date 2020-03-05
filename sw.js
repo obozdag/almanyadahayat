@@ -4,7 +4,7 @@ var staticContentToCache = [
 	'/js/jquery-3.3.1.min.js',
 	'/js/bootstrap.min.js',
 	'/css/bootstrap.min.css',
-	'/css/all.css',
+	'/css/fontawesome.all.css',
 	'/css/webfonts/fa-solid-900.woff2',
 	'/app.js',
 	'/css/styles.css',
