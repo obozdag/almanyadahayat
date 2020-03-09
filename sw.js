@@ -4,8 +4,8 @@ var staticContentToCache = [
 	'/js/jquery-3.3.1.min.js',
 	'/js/bootstrap.min.js',
 	'/css/bootstrap.min.css',
-	'/css/fontawesome.all.css',
-	'/css/webfonts/fa-solid-900.ttf',
+	'/css/fontello.css',
+	'/css/fonts/fontello.ttf',
 	'/app.js',
 	'/css/styles.css',
 	'/favicon.ico',
@@ -36,8 +36,7 @@ self.addEventListener('install', evt => {
 	console.log('[Service Worker] Installed');
 	evt.waitUntil(
 		caches.open(cacheName).then(cache => {
-			console.log(cache);
-			staticContentToCache.forEach(function(file){cache.add(file).then(()=>console.log(file, ' added')).catch(err=>console.err(err))});
+			staticContentToCache.forEach(function(file){cache.add(file).catch(err=>console.err(err))});
 		})
 	);
 });
