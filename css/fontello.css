@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'fontello';
+	src: url("/css/fonts/fontello.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fo {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Uncomment for 3D effect */
+	text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+}
+
+.fo-gift::before { content: '\e800'; }
+.fo-basket::before { content: '\e801'; }
+.fo-flight::before { content: '\e802'; }
+.fo-campsite::before { content: '\e80d'; }
+.fo-islam::before { content: '\e830'; }
+.fo-theater::before { content: '\e83a'; }
+.fo-coffee::before { content: '\f0f4'; }
+.fo-mobile::before { content: '\f10b'; }
+.fo-bank::before { content: '\f19c'; }
+.fo-graduation-cap::before { content: '\f19d'; }
+.fo-bus::before { content: '\f207'; }
+.fo-map::before { content: '\f278'; }
+.fo-address-card::before { content: '\f2bc'; }
+.fo-globe::before { content: '\e803'; }
+.fo-users:before { content: '\e804'; }
+.fo-mail::before { content: '\e805'; }
+.fo-home::before { content: '\e806'; }
+.fo-smile::before { content: '\f118'; }
+.fo-frown::before { content: '\f119'; }
